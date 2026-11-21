@@ -58,3 +58,138 @@ Author: min12252 <bbrr7709@gmail.com>
 Date:   Tue Nov 10 17:31:19 2026 +0900
 
     Initial commit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+haru@MacBook-Air-2 ~/dev/codyssey % ls 
+m1      m2      m3      test
+haru@MacBook-Air-2 ~/dev/codyssey % cd m2
+haru@MacBook-Air-2 ~/dev/codyssey/m2 % ls
+codyssey_m2_python_quiz
+haru@MacBook-Air-2 ~/dev/codyssey/m2 % cd codyssey_m2_python_quiz
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        log/
+
+nothing added to commit but untracked files present (use "git add" to track)
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git add .
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git commit -m "file: add log folder and file"
+[main 064eae8] file: add log folder and file
+ 1 file changed, 60 insertions(+)
+ create mode 100644 log/git_log.txt
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 1.05 KiB | 1.05 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/min12252/codyssey_m2_python_quiz.git
+   8e7bf69..064eae8  main -> main
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git branch
+* main
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git log --oneline --graph --all
+* 064eae8 (HEAD -> main, origin/main, origin/HEAD) file: add log folder and file
+* 8e7bf69 docs: update README.md
+* 48274bb fix: used_id 필터링 기능 수정
+* dbf4737 fix: 퀴즈 점수관련 수정
+* 794d12e docs: update README.md
+* 4f60031 docs: update README.md
+* 6507c68 feat: '데이터 확인 및 수정'부분 기능 추가
+* cf32ac0 refactor: quiz, player 분리하여 저장하도록 변경
+* 09db95d feat: 기본 퀴즈 게임 기능 구현
+* cb9c77b Update README
+* 1b0ffde Initial commit
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git switch -c feature/readme
+Switched to a new branch 'feature/readme'
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git branch
+* feature/readme
+  main
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git status
+On branch feature/readme
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git add README.md
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git add README.md
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git status
+On branch feature/readme
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git commit -m "docs: add git branch practice record"
+[feature/readme ee0c1af] docs: add git branch practice record
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git branch
+  feature/readme
+* main
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git merge --no-ff feature/readme
+Merge made by the 'ort' strategy.
+ README.md | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git log --oneline --graph --all
+*   ccfbda1 (HEAD -> main) Merge branch 'feature/readme'
+|\  
+| * ee0c1af (feature/readme) docs: add git branch practice record
+|/  
+* 064eae8 (origin/main, origin/HEAD) file: add log folder and file
+* 8e7bf69 docs: update README.md
+* 48274bb fix: used_id 필터링 기능 수정
+* dbf4737 fix: 퀴즈 점수관련 수정
+* 794d12e docs: update README.md
+* 4f60031 docs: update README.md
+* 6507c68 feat: '데이터 확인 및 수정'부분 기능 추가
+* cf32ac0 refactor: quiz, player 분리하여 저장하도록 변경
+* 09db95d feat: 기본 퀴즈 게임 기능 구현
+* cb9c77b Update README
+* 1b0ffde Initial commit
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 542 bytes | 542.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/min12252/codyssey_m2_python_quiz.git
+   064eae8..ccfbda1  main -> main
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git push origin feature/readme
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature/readme' on GitHub by visiting:
+remote:      https://github.com/min12252/codyssey_m2_python_quiz/pull/new/feature/readme
+remote: 
+To https://github.com/min12252/codyssey_m2_python_quiz.git
+ * [new branch]      feature/readme -> feature/readme

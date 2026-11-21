@@ -1,0 +1,20 @@
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % cd ~/dev/codyssey/m2
+haru@MacBook-Air-2 ~/dev/codyssey/m2 % git clone https://github.com/min12252/codyssey_m2_python_quiz.git clone_test                                
+Cloning into 'clone_test'...
+remote: Enumerating objects: 53, done.
+remote: Counting objects: 100% (53/53), done.
+remote: Compressing objects: 100% (33/33), done.
+remote: Total 53 (delta 26), reused 40 (delta 17), pack-reused 0 (from 0)
+Receiving objects: 100% (53/53), 13.95 KiB | 6.98 MiB/s, done.
+Resolving deltas: 100% (26/26), done.
+haru@MacBook-Air-2 ~/dev/codyssey/m2 % cd clone_test
+haru@MacBook-Air-2 ~/dev/codyssey/m2/clone_test % git remote -v
+origin  https://github.com/min12252/codyssey_m2_python_quiz.git (fetch)
+origin  https://github.com/min12252/codyssey_m2_python_quiz.git (push)
+
+haru@MacBook-Air-2 ~/dev/codyssey/m2/clone_test % cd ../codyssey_m2_python_quiz
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git add README.md
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git add README.md
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git commit -m "docs: add pull practice record"
+[main 77d6ff2] docs: add pull practice record
+ 1 file changed, 1 insertion(+), 1 deletion(-)

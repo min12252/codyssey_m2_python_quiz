@@ -45,10 +45,12 @@ quiz_project/
 ├── state.json         # 데이터 저장 파일 (실행 시 생성)
 ├── .gitignore         # 불필요한 파일 제외 (__pycache__ 등)
 └── README.md          # 프로젝트 문서
-
+```
 
 
 ## Git 브랜치 실습
 
 - feature/readme 브랜치를 생성하여 README 수정 작업 진행
 - 작업 내용을 커밋한 후 main 브랜치에 병합
+
+## Clone/Pull 실습

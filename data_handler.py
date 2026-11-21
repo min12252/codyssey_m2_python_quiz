@@ -23,7 +23,12 @@ class DataHandler:
         return quizzes, players
 
     # 객체 리스트를 다시 딕셔너리로 바꿔서 파일에 저장
-    def save_data(self, quizzes, players):
+    def save_data(self, quizzes=None, players=None):
+        data = self.load_data()
+        if quizzes is None:
+            quizzes = data[0]
+        if players is None:
+            players = data[1]
         data = {
             # 객체를 딕셔너리로 변환 (__dict__ 사용)
             "quizzes": [q.__dict__ for q in quizzes],

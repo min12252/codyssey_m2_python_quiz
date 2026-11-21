@@ -39,6 +39,8 @@ def main():
             # 퀴즈 루프
             score_sum = 0
             cunt = 0
+            gc.start_turn()
+            
             while True:
                 quiz = gc.get_random_quiz(selected_cat)
                 if not quiz:
@@ -57,6 +59,7 @@ def main():
                 if user_input.lower() == 'exit':
                     break
                 if user_input.lower() == 'pass':
+                    gc.record_quiz(quiz)
                     print("패스! 다음 문제로 넘어갑니다.")
                     continue
 
@@ -69,7 +72,7 @@ def main():
                 if is_correct:
                     print(f"✅ 정답입니다! ({time_taken:.1f}초 소요 / {int(score_sum/cunt)}점)")
                 else:
-                    print(f"❌ 틀렸습니다! 정답은 [{quiz.answer}]였습니다.")
+                    print(f"❌ 틀렸습니다!")
 
         elif choice == "2":
 

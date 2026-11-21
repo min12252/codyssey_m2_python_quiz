@@ -33,65 +33,9 @@
   ],
   "players": [
     {
-      "name": "min",
-      "score": 5,
-      "solved_ids": [
-        1,
-        2
-      ]
-    },
-    {
-      "name": "min2",
-      "score": 0,
-      "solved_ids": []
-    },
-    {
-      "name": "min1",
-      "score": 3,
-      "solved_ids": [
-        5
-      ]
-    },
-    {
       "name": "",
       "score": 0,
-      "solved_ids": []
-    },
-    {
-      "name": "test",
-      "score": 2.25,
-      "solved_ids": [
-        4,
-        3,
-        5,
-        2,
-        1
-      ]
-    },
-    {
-      "name": "test1",
-      "score": 1.8,
-      "solved_ids": [
-        5,
-        1,
-        2
-      ]
-    },
-    {
-      "name": "test2",
-      "score": 66.66666666666667,
-      "solved_ids": [
-        4,
-        3
-      ]
-    },
-    {
-      "name": "test4",
-      "score": 75,
-      "solved_ids": [
-        3,
-        4
-      ]
+      "used_ids": []
     }
   ]
 }

@@ -6,7 +6,7 @@ class Quiz:
         self.answer = answer
 
 class Player:
-    def __init__(self, name, score=0, solved_ids=None):
+    def __init__(self, name, score=0, used_ids=None):
         self.name = name
         self.score = score
-        self.solved_ids = solved_ids if solved_ids is not None else []
+        self.used_ids = used_ids if used_ids is not None else []

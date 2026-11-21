@@ -116,6 +116,7 @@ def main():
             gc.save_game()
             print("\n게임 데이터를 저장했습니다. 안녕히 가세요!")
             break
+
         else:
             print("잘못된 선택입니다. 다시 입력해주세요.")
 

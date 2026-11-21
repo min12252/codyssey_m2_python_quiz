@@ -129,4 +129,11 @@ def main():
             print("잘못된 선택입니다. 다시 입력해주세요.")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+
+    except KeyboardInterrupt:
+        print("\n프로그램이 사용자 요청으로 종료되었습니다.")
+
+    except EOFError:
+        print("\n입력이 종료되어 프로그램을 종료합니다.")

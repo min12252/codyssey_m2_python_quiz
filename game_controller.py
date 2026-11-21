@@ -42,13 +42,13 @@ class GameController:
     # 4. 정답 확인 및 점수 계산
     def check_answer(self, quiz, user_answer, time_taken):
         if user_answer == quiz.answer:
-            # 시간 기반 점수 계산 (10초 내 3점, 30초 내 2점, 60초 내 1점)
-            if time_taken <= 10: score = 3
-            elif time_taken <= 30: score = 2
-            elif time_taken <= 60: score = 1
+            # 시간 기반 점수 계산 (10초 내 100점, 30초 내 50점, 60초 내 10점)
+            if time_taken <= 10: score = 100
+            elif time_taken <= 30: score = 50
+            elif time_taken <= 60: score = 10
             else: score = 0
             
-            self.current_player.score += score
+            # self.current_player.score += score
             self.current_player.solved_ids.append(quiz.id) # 푼 문제 목록에 추가
             return True, score
         return False, 0

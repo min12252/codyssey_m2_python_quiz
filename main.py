@@ -37,6 +37,8 @@ def main():
             selected_cat = categories[cat_idx]
 
             # 퀴즈 루프
+            score_sum = 0
+            cunt = 0
             while True:
                 quiz = gc.get_random_quiz(selected_cat)
                 if not quiz:
@@ -60,9 +62,12 @@ def main():
 
                 # 정답 확인
                 is_correct, score = gc.check_answer(quiz, user_input, time_taken)
+                score_sum += score
+                cunt += 1
+                gc.current_player.score = int(score_sum/cunt)
 
                 if is_correct:
-                    print(f"✅ 정답입니다! ({time_taken:.1f}초 소요 / +{score}점)")
+                    print(f"✅ 정답입니다! ({time_taken:.1f}초 소요 / {int(score_sum/cunt)}점)")
                 else:
                     print(f"❌ 틀렸습니다! 정답은 [{quiz.answer}]였습니다.")
 

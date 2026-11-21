@@ -1,0 +1,60 @@
+haru@MacBook-Air-2 ~/dev/codyssey/m2/codyssey_m2_python_quiz % git log
+commit 8e7bf694d8a9373efadb37309f20cacd205adc20 (HEAD -> main, origin/main, origin/HEAD)
+Author: min12252 <bbrr7709@gmail.com>
+Date:   Sun Nov 22 06:09:57 2026 +0900
+
+    docs: update README.md
+
+commit 48274bb6e4d0f58f2582a4a2bdd4763efc73e8b1
+Author: min12252 <bbrr7709@gmail.com>
+Date:   Sun Nov 22 06:02:14 2026 +0900
+
+    fix: used_id 필터링 기능 수정
+
+commit dbf473705a333b205d207f59bb5f2ac284f9cf8d
+Author: min12252 <bbrr7709@gmail.com>
+Date:   Sun Nov 22 05:21:02 2026 +0900
+
+    fix: 퀴즈 점수관련 수정
+
+commit 794d12e8f8ec60decc44f67af1f9c44e96762728
+Author: min12252 <bbrr7709@gmail.com>
+Date:   Sun Nov 22 04:09:01 2026 +0900
+
+    docs: update README.md
+
+commit 4f60031e732160c65f9332c6c743c86f0f4d1aa1
+Author: min12252 <bbrr7709@gmail.com>
+Date:   Sun Nov 22 04:06:01 2026 +0900
+
+    docs: update README.md
+
+commit 6507c68f6af8399ef207b53dfbce9642b652c2d5
+Author: min12252 <bbrr7709@gmail.com>
+Date:   Sun Nov 22 03:55:26 2026 +0900
+
+    feat: '데이터 확인 및 수정'부분 기능 추가
+
+commit cf32ac0235cef57074907982d31eed71302f3c71
+Author: min12252 <bbrr7709@gmail.com>
+Date:   Sun Nov 22 03:15:46 2026 +0900
+
+    refactor: quiz, player 분리하여 저장하도록 변경
+
+commit 09db95dd3398d4d02db747cbf95195349a7a93f5
+Author: min12252 <bbrr7709@gmail.com>
+Date:   Sat Nov 21 14:23:13 2026 +0900
+
+    feat: 기본 퀴즈 게임 기능 구현
+
+commit cb9c77be48f27bd4499a17488db06ec3403df3c3
+Author: min12252 <bbrr7709@gmail.com>
+Date:   Tue Nov 10 19:26:59 2026 +0900
+
+    Update README
+
+commit 1b0ffded04a0b38bb7997a9637b00b32f1dd26e0
+Author: min12252 <bbrr7709@gmail.com>
+Date:   Tue Nov 10 17:31:19 2026 +0900
+
+    Initial commit

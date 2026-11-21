@@ -1,0 +1,43 @@
+{
+  "quizzes": [
+    {
+      "id": 1,
+      "category": "동물",
+      "initials": "ㄱㅇㅇ",
+      "answer": "고양이"
+    },
+    {
+      "id": 2,
+      "category": "동물",
+      "initials": "ㅋㄲㄹ",
+      "answer": "코끼리"
+    },
+    {
+      "id": 3,
+      "category": "과일",
+      "initials": "ㅅㄱ",
+      "answer": "사과"
+    },
+    {
+      "id": 4,
+      "category": "과일",
+      "initials": "ㅍㄷ",
+      "answer": "포도"
+    }
+  ],
+  "players": [
+    {
+      "name": "min",
+      "score": 5,
+      "solved_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "min2",
+      "score": 0,
+      "solved_ids": []
+    }
+  ]
+}

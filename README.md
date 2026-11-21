@@ -29,11 +29,13 @@
 ## 5. 파일구조
 ```bash
 quiz_project/
-├── main.py           # 프로그램 실행 진입점 (Entry Point)
-├── models.py         # Quiz, QuizGame 클래스 정의
-├── state.json        # 데이터 저장 파일 (실행 시 생성)
-├── .gitignore        # 불필요한 파일 제외 (__pycache__ 등)
-└── README.md         # 프로젝트 문서
+├── main.py            # 프로그램 실행 진입점 (Entry Point)
+├── models.py          # Quiz, QuizGame 클래스 정의
+├── game_controller.py # 퀴즈 실행, 시간 측정, 점수 계산 로직
+├── data_handler.py    # state.json 파일 읽기/쓰기 및 데이터 필터링
+├── state.json         # 데이터 저장 파일 (실행 시 생성)
+├── .gitignore         # 불필요한 파일 제외 (__pycache__ 등)
+└── README.md          # 프로젝트 문서
 ```
 
 ## 6. 데이터 파일 설명

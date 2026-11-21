@@ -54,3 +54,5 @@ quiz_project/
 - 작업 내용을 커밋한 후 main 브랜치에 병합
 
 ## Clone/Pull 실습
+- clone_test 폴더에 clone
+- README.md 수정 후 commit

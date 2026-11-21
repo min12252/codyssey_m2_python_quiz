@@ -23,6 +23,12 @@
       "category": "과일",
       "initials": "ㅍㄷ",
       "answer": "포도"
+    },
+    {
+      "id": 5,
+      "category": "동물",
+      "initials": "ㅂ",
+      "answer": "뱀"
     }
   ],
   "players": [
@@ -38,6 +44,13 @@
       "name": "min2",
       "score": 0,
       "solved_ids": []
+    },
+    {
+      "name": "min1",
+      "score": 3,
+      "solved_ids": [
+        5
+      ]
     }
   ]
 }

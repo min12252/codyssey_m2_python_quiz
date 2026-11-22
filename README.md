@@ -44,15 +44,42 @@ quiz_project/
 ├── data_handler.py    # state.json 파일 읽기/쓰기 및 데이터 필터링
 ├── state.json         # 데이터 저장 파일 (실행 시 생성)
 ├── .gitignore         # 불필요한 파일 제외 (__pycache__ 등)
-└── README.md          # 프로젝트 문서
+├── README.md          # 프로젝트 문서
+└── log                # 실습 로그 txt,img 파일
 ```
+
+## 6. 클래스 역할
+- data_handler.py: json 데이터를 읽고 다시 저장
+    - load_data
+    - save_data
+- game_controller: 게임 실행시 필요한 기능
+    - set_player: 플레이어 선택/등록
+    - get_categories: 카테고리 목록 가져오기
+    - start_turn: 턴 시작시 used_ids 초기화
+    - get_random_quiz: 안푼 문제 랜덤으로 가져오기
+    - check_answer: 정답확인, 점수계산
+    - record_quiz: used_ids에 문제 기록
+    - save_game: 게임 데이터 저장
+- models: 퀴즈, 플레이어 객체 생성
+    - quiz
+    - player
 
 
 ## Git 브랜치 실습
 
 - feature/readme 브랜치를 생성하여 README 수정 작업 진행
 - 작업 내용을 커밋한 후 main 브랜치에 병합
+<br>
+
+[커밋 로그](log/git_log.txt)
+
+[git log --oneline --graph](log/git_log스크린샷.png)
 
 ## Clone/Pull 실습
 - clone_test 폴더에 clone
 - README.md 수정 후 commit
+- 원래 폴더에서 다시 pull
+<br>
+
+[clone/pull 실습 로그](log/clone_test.txt)
+

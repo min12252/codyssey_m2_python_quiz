@@ -29,12 +29,32 @@
       "category": "동물",
       "initials": "ㅂ",
       "answer": "뱀"
+    },
+    {
+      "id": 6,
+      "category": "과일",
+      "initials": "ㅂㅅㅇ",
+      "answer": "복숭아"
     }
   ],
   "players": [
     {
       "name": "",
       "score": 0,
+      "used_ids": []
+    },
+    {
+      "name": "test1",
+      "score": 66,
+      "used_ids": [
+        2,
+        5,
+        1
+      ]
+    },
+    {
+      "name": "1",
+      "score": 50,
       "used_ids": []
     }
   ]
